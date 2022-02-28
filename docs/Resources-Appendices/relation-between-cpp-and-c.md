@@ -5,5 +5,4 @@ sidebar_position: 4
 description: TBD
 ---
 
-#Relation Between C++ and C
-
+# Relation Between C++ and C

@@ -5,5 +5,4 @@ sidebar_position: 1
 description: TBD
 ---
 
-#Input and Output Refinements
-
+# Input and Output Refinements

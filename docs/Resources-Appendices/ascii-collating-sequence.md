@@ -5,5 +5,4 @@ sidebar_position: 2
 description: TBD
 ---
 
-#ASCII Collating Sequence
-
+# ASCII Collating Sequence

@@ -5,5 +5,4 @@ sidebar_position: 3
 description: TBD
 ---
 
-#Operator Precedence
-
+# Operator Precedence

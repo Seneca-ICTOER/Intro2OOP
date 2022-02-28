@@ -5,5 +5,4 @@ sidebar_position: 2
 description: TBD
 ---
 
-#Functions in a Hierarchy
-
+# Functions in a Hierarchy

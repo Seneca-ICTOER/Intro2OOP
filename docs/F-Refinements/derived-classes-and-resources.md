@@ -5,5 +5,4 @@ sidebar_position: 2
 description: TBD
 ---
 
-#Derived Classes and Resources
-
+# Derived Classes and Resources
