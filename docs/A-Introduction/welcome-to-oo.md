@@ -5,6 +5,8 @@ sidebar_position: 1
 description: TBD
 ---
 
+Part A - Introduction
+
 # Welcome to Object-Oriented
 
 - Introduce complexity and object-oriented programming
@@ -49,7 +51,7 @@ Learning to divide a complex problem into objects and to identify the relationsh
 
 Java, C, C++, Python and C# are currently in top ten most popular languages. Java, C, C++ and C# have much syntax in common: Java syntax is C-like, but not a superset of C, C++ contains almost all of C as a subset, and C# syntax is C++-like but not a superset of C. Each is an imperative language; that is, a language that specifies every step necessary to reach a desired state.
 
-![C/C++](images/C-CPP.png)
+![C/C++](images/03-C-CPP.png)
 
 The distinguishing features of C, C++ and Java are:
 
