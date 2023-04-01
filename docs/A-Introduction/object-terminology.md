@@ -26,7 +26,7 @@ Programming solutions to application problems consist of components. The process
 
 An object-oriented programming solution to an application problem consists of components called objects. The process of designing an object-oriented solution likewise involves abstraction. We distinguish the most important features of the object, identify them publicly and hide the less important details within the object itself.
 
-![OOP](images/04-OO-BookShelf.png)
+![OOP](/img/04-OO-BookShelf.png)
 
 Each object has a crisp conceptual boundary and acts in ways appropriate to itself. Compare a book with a set of notes. A book has pages that are bound and can be flipped. The page order is fixed. A set of notes consists of loose pages that can be rearranged in any order. We represent the book as an object and the set of notes as another object; each object has a different structure.
 
@@ -36,7 +36,7 @@ The cout and cin objects introduced in the preceding chapter are examples. They 
 
 We describe the structure of similar objects in terms of their class. Objects of the same class have the same structure, but possibly different states. The variable types that describe their states are identical, but generally have different values. For example, all of the books in the figure above have a title and an author, but each book has a different title and a different author.
 
-![Classes](images/05-Classes.png)
+![Classes](/img/05-Classes.png)
 
 We say that each object is an instance of its class.
 
@@ -44,7 +44,7 @@ We say that each object is an instance of its class.
 
 The Unified Modelling Language (UML) is a general-purpose modeling language developed for describing systems of objects and relationships between their classes. This language defines standard symbols for classes and their relationships. The connectors shown in the relationship diagram below are UML connectors. We use these symbols in this text.
 
-![UML](images/06-UML.png)
+![UML](/img/06-UML.png)
 
 ### The Class Diagram
 
@@ -56,7 +56,7 @@ The primary graphic in UML is the _class diagram_; a rectangular box with three 
 
 For Example,
 
-![Class Diagram](images/07-ClassDiagram.png)
+![Class Diagram](/img/07-ClassDiagram.png)
 
 The naming conventions include:
 
@@ -79,7 +79,7 @@ _Encapsulation_ is the primary concept of object-oriented programming. It refers
 
 A class definition declares the variables and the function prototypes. The variables store each object's data and the functions contain the logic that operates on that data. Clients access objects through calls to these functions without knowledge of the data stored within the objects or the logic that manipulates that data.
 
-![ENCAPSULATION](images/08-Encapsulation.png)
+![ENCAPSULATION](/img/08-Encapsulation.png)
 
 Encapsulation shields the complex details of a class' implementation from its interface; that is, its crisp external representation. Consider the following statement from the preceding chapter:
 
@@ -106,7 +106,7 @@ These are special cases of encapsulation in the sense of distinguishing interfac
 
 Inheritance relates classes that share the same structure. In the Figure below, the `Hybrid Course` class inherits the entire structure of the `Course` class and adds some further structure. We say that the hybrid course _'is-a-kind-of'_ `Course` and depict the inheritance relationship using an arrow drawn from the more specialized class to the more general class:
 
-![Inheritance](images/09-Inheritance.png)
+![Inheritance](/img/09-Inheritance.png)
 
 Inheriting one class from another allows us to utilize existing technology. We only provide the code that implements additional structure.
 
@@ -116,7 +116,7 @@ Polymorphism relates the implementation for an object based on its type. In the 
 
 A `mode()` query on a `Course` type reports a different result than a `mode()` query on a `Hybrid Course` type. On the other hand, an `assessments()` query on a `Course` type reports the same result as on an `HybridCourse` type.
 
-![Polymorphism](images/10-Polymorphism.png)
+![Polymorphism](/img/10-Polymorphism.png)
 
 Polymorphic programming allows us to minimize the duplication of code amongst objects that belong to the same inheritance hierarchy.
 

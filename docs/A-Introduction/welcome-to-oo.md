@@ -31,13 +31,13 @@ Consider a course enrollment system for a program in a college or university. Ea
 
 The following structure diagram identifies the activities.
 
-![Course Participation](images/01-CourseParticipation.png)
+![Course Participation](/img/01-CourseParticipation.png)
 
 If we switch our attention to the objects involved, we find a Course and a Hybrid Course. Focusing on a Course, we observe that it has a Course Code. We lookup the Code in the institution's Calendar to determine when that Course is offered.
 
 We say that a Course **_has a_** Code and **_uses a_** Grading Scheme and that a Hybrid Course is **_a kind of_** Course. The diagram below shows these relationships between the objects in this problem domain. The connectors identify the types of relationships. The closed circle connector identifies a **_has-a_** relationship, the open circle connector identifies a **_uses-a_** relationship and the arrow connector identifies an **_is-a-kind-of_** relationship.
 
-![Relationship](images/02-relationship.png)
+![Relationship](/img/02-relationship.png)
 
 In switching our attention from the activities in the structure chart to the objects in the relationship diagram we have switched from a procedural description of the problem to an object-oriented description.
 
@@ -51,7 +51,7 @@ Learning to divide a complex problem into objects and to identify the relationsh
 
 Java, C, C++, Python and C# are currently in top ten most popular languages. Java, C, C++ and C# have much syntax in common: Java syntax is C-like, but not a superset of C, C++ contains almost all of C as a subset, and C# syntax is C++-like but not a superset of C. Each is an imperative language; that is, a language that specifies every step necessary to reach a desired state.
 
-![C/C++](images/03-C-CPP.png)
+![C/C++](/img/03-C-CPP.png)
 
 The distinguishing features of C, C++ and Java are:
 
