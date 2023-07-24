@@ -7,7 +7,7 @@ description: TBD
 
 Part A - Introduction
 
-# Object Terminology
+<!--- # Object Terminology --->
 
 - Introduce objects and classes
 - Introduce encapsulation, inheritance and polymorphism

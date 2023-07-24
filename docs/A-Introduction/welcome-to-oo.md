@@ -7,7 +7,7 @@ description: TBD
 
 Part A - Introduction
 
-# Welcome to Object-Oriented
+<!--- # Welcome to Object-Oriented--->
 
 - Introduce complexity and object-oriented programming
 - Introduce namespaces for grouping an application's identifiers

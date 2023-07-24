@@ -8,6 +8,8 @@
 .docusaurus
 .cache-loader
 
+# visual studio code
+.vscode
 
 # helper windows batch scripts
 .bat
