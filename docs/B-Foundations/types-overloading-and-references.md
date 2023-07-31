@@ -714,7 +714,7 @@ Here, while the objects are of the same type, the processing of their data is do
 
 The 84 keywords of the C++11 standard are listed below. We cannot use any of these keywords as identifiers. Those in bold are also C keywords. The italicized keywords are alternative tokens for operators.
 
-|            |             |              |            |              |               |                  |
+| <!-- -->   | <!-- -->    | <!-- -->     | <!-- -->   | <!-- -->     | <!-- -->      | <!-- -->         |
 | ---------- | ----------- | ------------ | ---------- | ------------ | ------------- | ---------------- |
 | alignas    | alignof     | _and_        | _and_eq_   | asm          | **auto**      | _bitand_         |
 | itor       | bool        | **break**    | **case**   | catch        | **char**      | char16_t         |
@@ -745,7 +745,3 @@ C++ compilers will successfully compile any C program that does not use any of t
 - the `&` operator on a parameter type instructs the compiler to pass by reference
 - pass by reference syntax simplifies the pass by address syntax in most cases
 - an array of pointers is a data structure that provides an efficient way for iterating through a set of objects based on their current type
-
-## EXERCISE
-
-- Complete the Handout on [Basic Concepts](./basic-concept-handout.md)
