@@ -7,8 +7,6 @@ description: TBD
 
 # Types, Overloading and References
 
-Part B - Foundations
-
 - Review types, declarations, definitions and scoping
 - Introduce overloading and function signatures
 - Introduce pass by reference and compare it to pass by address
@@ -103,7 +101,7 @@ The C++ language requires the keyword identifying a compound type only in the de
 
 ### C example
 
-```C
+```c
  // Modular Example - C
  // Transaction.h
 
