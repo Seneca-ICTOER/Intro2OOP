@@ -5,8 +5,6 @@ sidebar_position: 1
 description: TBD
 ---
 
-Part A - Introduction
-
 <!--- # Welcome to Object-Oriented--->
 
 - Introduce complexity and object-oriented programming

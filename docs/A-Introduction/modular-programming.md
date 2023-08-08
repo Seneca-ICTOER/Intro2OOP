@@ -5,8 +5,6 @@ sidebar_position: 3
 description: TBD
 ---
 
-Part A - Introduction
-
 <!--- # Modular Programming --->
 
 - Partition source code into modular solution

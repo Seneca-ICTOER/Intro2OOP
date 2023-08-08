@@ -5,8 +5,6 @@ sidebar_position: 2
 description: TBD
 ---
 
-Part A - Introduction
-
 <!--- # Object Terminology --->
 
 - Introduce objects and classes
