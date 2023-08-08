@@ -139,7 +139,7 @@ Note that we place the implementation of an inline function in the header file t
 
 ### Function Deletion
 
-C++11 introduced use of the keyword `delete` to inform the compiler that we do not want any default definition of a member function created. An example of this usage is the [Copies Prohibited Section](/Encapsulation/classes-and-resources#copies-prohibited) of the chapter entitled [Classes and Resoures](/Encapsulation/classes-and-resources).
+C++11 introduced use of the keyword `delete` to inform the compiler that we do not want any default definition of a member function created. An example of this usage is the [Copies Prohibited Section](/C-Encapsulation/classes-and-resources#copies-prohibited) of the chapter entitled [Classes and Resoures](/C-Encapsulation/classes-and-resources).
 
 #### The Legacy Way
 
@@ -164,7 +164,7 @@ Since these special member functions were defined as private members, no definit
 
 ### C-Style Casts
 
-C++ inherited its original casting facilities from C directly. The constrained casting syntax described in the chapter entitled [Templates](/Polymorphism/templates) is more discriminating than the inherited syntax. The standards support the inherited syntax for legacy reasons. The availability of these older features allows programmers to bypass the type system and directly weaken a compiler's ability to identify type errors.
+C++ inherited its original casting facilities from C directly. The constrained casting syntax described in the chapter entitled [Templates](/E-Polymorphism/templates) is more discriminating than the inherited syntax. The standards support the inherited syntax for legacy reasons. The availability of these older features allows programmers to bypass the type system and directly weaken a compiler's ability to identify type errors.
 
 For example, consider code that converts an `int` to a pointer to an `int`. Such code is most probably a typing mistake, C and hence C++ allow this code to slip through the type checking system:
 

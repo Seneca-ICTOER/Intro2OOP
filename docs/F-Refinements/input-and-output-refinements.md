@@ -13,7 +13,7 @@ description: TBD
 
 > "Designing and implementing a general input/output facility for a programming language is notoriously difficult. ... Nobody has come up with a solution that pleases everyone" **Stroustrup, 1997.**
 
-The chapter entitled [Member Functions and Privacy](/Foundations/member-functions-and-privacy) covered the public member functions that format data passing through the standard library's `iostream` objects. The chapter entitled [Input and Output Operators](/Encapsulation/input-and-output-operators) covered the design of custom input and output operators and introduced the standard library's `fstream` classes for processing file data.
+The chapter entitled [Member Functions and Privacy](/B-Foundations/member-functions-and-privacy) covered the public member functions that format data passing through the standard library's `iostream` objects. The chapter entitled [Input and Output Operators](/C-Encapsulation/input-and-output-operators) covered the design of custom input and output operators and introduced the standard library's `fstream` classes for processing file data.
 
 This chapter describes in more detail the input and output objects along with their public member functions reviews the material covered in those preceding chapters. This chapter introduces manipulators as a simplifying alternative to member function calls on input and output objects.
 

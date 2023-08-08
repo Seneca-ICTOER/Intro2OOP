@@ -342,7 +342,7 @@ void Student::display() const {
 
 ### Looking Forward
 
-Although this upgrade validates data incoming from client code, our class definition still leaves the data in a `Student` object uninitialized before the first call from client code to `set()`. To address this deficiency, we will introduce a special member function in the chapter entitled [Construction and Destruction.](/Encapsulation/construction-and-destruction)
+Although this upgrade validates data incoming from client code, our class definition still leaves the data in a `Student` object uninitialized before the first call from client code to `set()`. To address this deficiency, we will introduce a special member function in the chapter entitled [Construction and Destruction.](/C-Encapsulation/construction-and-destruction)
 
 ## Input and Output Examples
 
@@ -448,7 +448,7 @@ The `istream` type supports the following member functions:
 - `get(...)`: Extracts a character or a string from the input buffer
 - `getline(...)`: Extracts a line of characters from the input buffer
 
-For detailed descriptions of `get()` and `getline()`, see the chapter entitled [Input and Output Refinements](/Refinements/input-and-output-refinements#member-functions).
+For detailed descriptions of `get()` and `getline()`, see the chapter entitled [Input and Output Refinements](/F-Refinements/input-and-output-refinements#member-functions).
 
 #### `ignore()`
 

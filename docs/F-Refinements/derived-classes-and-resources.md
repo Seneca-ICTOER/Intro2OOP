@@ -540,7 +540,7 @@ Harry 1234:
 
 ## Direct Call Copy Constructor
 
-The alternative to sharing a private member function is a direct call from the copy constructor to the copy assignment operator (as in the chapter entitled [Classes and Resources](/Encapsulation/classes-and-resources)). In a direct call, the assignment operator copies the base class part of the object and any call to the base class copy constructor is redundant.
+The alternative to sharing a private member function is a direct call from the copy constructor to the copy assignment operator (as in the chapter entitled [Classes and Resources](/C-Encapsulation/classes-and-resources)). In a direct call, the assignment operator copies the base class part of the object and any call to the base class copy constructor is redundant.
 
 ```cpp
 Student::Student(const Student& src) { // calls no-argument base constructor

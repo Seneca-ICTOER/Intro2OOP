@@ -139,7 +139,7 @@ are identical
 
 Free helper functions use public queries to access information that is otherwise inaccessible. If we add a data member to the class, we may also need to add a query to access its value. As we add data members, the class definition grows with new queries. We call this growth class bloat.
 
-One alternative to class bloat that admits upgradability is [friendship](/Encapsulation/helper-functions#friendship).
+One alternative to class bloat that admits upgradability is [friendship](/C-Encapsulation/helper-functions#friendship).
 
 ## Helper Operators
 
@@ -217,7 +217,7 @@ are identical
 
 Consider an expression that adds a single grade to a `Student` object and evaluates to a copy of the updated object. To implement this operation, let us overload the `+` operator for a `Student` object as the left operand and a `float` as the right operand.
 
-As part of the class definition, we include the `+=` operator described in the preceding chapter on [Member Operators](/Encapsulation/member-operators). The header file for the `Student` class now contains:
+As part of the class definition, we include the `+=` operator described in the preceding chapter on [Member Operators](/C-Encapsulation/member-operators). The header file for the `Student` class now contains:
 
 ```cpp
 // Student.h

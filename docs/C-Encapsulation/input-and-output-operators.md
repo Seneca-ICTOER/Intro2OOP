@@ -521,7 +521,7 @@ int main() {
 **Bad input**
 ```
 
-The file stream class definition overload the `bool` conversion operator to return false if the object is not ready for further streaming. A stream object is not ready for further streaming if it has encountered an error and has not been cleared. the topic of error states and clearing errors is covered later in the chapter entitled [Input and Output Refinements](/Refinements/input-and-output-refinements).
+The file stream class definition overload the `bool` conversion operator to return false if the object is not ready for further streaming. A stream object is not ready for further streaming if it has encountered an error and has not been cleared. the topic of error states and clearing errors is covered later in the chapter entitled [Input and Output Refinements](/F-Refinements/input-and-output-refinements).
 
 ### Writing to a File
 

@@ -68,7 +68,7 @@ The binding of a member function can take either of two forms:
 
 ### Early Binding
 
-Consider the following definition of our `Student` class from the chapter entitled [Functions in a Hierarchy](/Inheritance/functions-in-a-hierarchy):
+Consider the following definition of our `Student` class from the chapter entitled [Functions in a Hierarchy](/D-Inheritance/functions-in-a-hierarchy):
 
 ```cpp
 // Early Binding
