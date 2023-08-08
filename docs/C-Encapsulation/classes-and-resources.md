@@ -12,7 +12,7 @@ description: TBD
 
 > "Never allocate more than one resource in a single statement" **Sutter, Alexandrescu, 2005.**
 
-In object-oriented programming, we design classes to behave independently of their client applications. Wherever client code dictates the amount of memory that an object requires, the memory that needs to be allocated is unknown at compile-time. Only once the client has instantiated the object will the object know how much memory the client requires. To review run-time memory allocation and deallocation see the chapter entitled [Dynamic Memory](/Foundations/dynamic-memory).
+In object-oriented programming, we design classes to behave independently of their client applications. Wherever client code dictates the amount of memory that an object requires, the memory that needs to be allocated is unknown at compile-time. Only once the client has instantiated the object will the object know how much memory the client requires. To review run-time memory allocation and deallocation see the chapter entitled [Dynamic Memory](/B-Foundations/dynamic-memory).
 
 Memory that an object allocates at run-time represents a resource to its class. Management of this resource requires additional logic that was unnecessary in simpler designs. This additional logic ensures proper handling of the resource and is often called deep copying and deep assignment.
 

@@ -15,7 +15,7 @@ description: TBD
 
 Various components of object-oriented programs can be reused by other applications. An important aspect of object designing is including flexibility in their memory requirements to enhance reusability. Objects are more reusable by different clients if they account for their own memory needs internally. These memory requirements may depend on problem size, which might not even be known approximately at compile-time. Programming languages address this aspect of reusability by supporting dynamic memory allocation.
 
-This chapter introduces the C++ syntax for allocating and deallocating memory dynamically. The chapter entitled [Classes and Resources](/Encapsulation/classes-and-resources) augments this material with the details required to code classes that manage dynamic memory internally.
+This chapter introduces the C++ syntax for allocating and deallocating memory dynamically. The chapter entitled [Classes and Resources](/C-Encapsulation/classes-and-resources) augments this material with the details required to code classes that manage dynamic memory internally.
 
 ## Static and Dynamic Memory
 
