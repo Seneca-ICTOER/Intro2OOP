@@ -47,7 +47,7 @@ The ! operator reverses that value: !true is false and !false is true.
 
 Conversions from bool type to any integral type and vice versa require care. true promotes to an int of value 1, while false promotes to an int of value 0. Applying the ! operator to an int value other than 0 produces a value of 0, while applying the ! operator to an int value of 0 produces a value of 1. Note that the following code snippet displays 1 (not 4)
 
-```C++
+```cpp
 int x = 4;
 cout << !!x;
 
@@ -67,7 +67,7 @@ A compound type is a type composed of other types. A struct is a compound type. 
 
 For example,
 
-```c++
+```cpp
 // Modular Example
 // Transaction.h
 
@@ -82,7 +82,7 @@ The C++ language requires the keyword identifying a compound type only in the de
 
 ### C++ example
 
-```C++
+```cpp
  // Modular Example - C++
  // Transaction.h
 
@@ -128,7 +128,7 @@ The `auto` keyword was introduced in the C++11 standard. This keyword deduces th
 
 For example,
 
-```C++
+```cpp
      auto x = 4;   // x is an int that is initialized to 4
      auto y = 3.5; // y is a double that is initialized to 3.5
 ```
@@ -145,7 +145,7 @@ A declaration associates an entity with a type, telling the compiler how to inte
 
 For example, the prototype
 
-```C++
+```cpp
 int add(int, int);
 ```
 
@@ -153,7 +153,7 @@ declares `add()` to be a function that receives two ints and returns an int. Thi
 
 For example, the _forward declaration_
 
-```C++
+```cpp
 struct Transaction;
 ```
 
@@ -167,7 +167,7 @@ A definition is a declaration that associates a meaning with an identifier.
 
 For example, the following definitions attach meanings to `Transaction` and to `display()`:
 
-```C++
+```cpp
 struct Transaction {
     int acct;      // account number
     char type;     // credit 'c' debit 'd'
@@ -187,7 +187,7 @@ In C++, each definition is an executable statement. We may embed it amongst othe
 
 For example, we may place a definition within an initializer:
 
-```C++
+```cpp
 for (int i = 0; i < n; i++)
    //...
 ```
@@ -214,7 +214,7 @@ The program listed below consists of three modules: main, Transaction and iostre
 
 In the `main` module's implementation file we have introduced a new function called `add()`, which receives the address of a `double` and the address of a `Transaction` object. This function update the value stored in the first address:
 
-```C++
+```cpp
 // One Definition Rule
 // one_defintion_rule.cpp
 
@@ -243,7 +243,7 @@ void add(double* bal, const Transaction* tr) {
 
 The Transaction module's header file defines the Transaction type:
 
-```C++
+```cpp
 // Modular Example
 // Transaction.h
 
@@ -263,7 +263,7 @@ Into which header file should we insert the prototype for this `add()` function?
 
 If we insert the prototype into the `main` module's header file, `main.cpp` will not compile:
 
-```C++
+```cpp
 // main.h
 
 #define NO_TRANSACTIONS 3
@@ -275,7 +275,7 @@ The compiler will report `Transaction*` as undeclared. Note that the compiler an
 
 If we insert `Transaction.h` into this header file (`main.h`), we resolve this issue but break the one-definition rule in `main.cpp`:
 
-```C++
+```cpp
 // main.h
 
 #define NO_TRANSACTIONS 3
@@ -297,7 +297,7 @@ Possible designs are possible include:
 
 Inserting the prototype into `main.h` along with a forward declaration of `Transaction` informs the compiler that this identifier in the prototype is a valid type.
 
-```C++
+```cpp
 // main.h
 
 #define NO_TRANSACTIONS 3
@@ -312,7 +312,7 @@ This design provides the compiler with just enough information to accept the ide
 
 Inserting the prototype into the `Transaction.h` header file is a more compact solution:
 
-```C++
+```cpp
 // Modular Example
 // Transaction.h
 
@@ -359,7 +359,7 @@ Once a declaration is out of its scope, the program has lost access to the decla
 
 In the following code snippet, the counter i, declared within the for statement, goes out of scope immediately after the closing brace:
 
-```C++
+```cpp
 for (int i = 0; i < 4; i++) {
     cout << "The value of i is " << i << endl;
 } // i goes out of scope here
@@ -369,7 +369,7 @@ We cannot refer to i after the closing brace.
 
 A variable or object declared within a block goes out of scope immediately before the block's closing brace.
 
-```C++
+```cpp
  for (int i = 0; i < 3; i++) {
      int j = 2 * i;
      cout << "The value of j is " << j << endl;
@@ -382,7 +382,7 @@ The scope of j extends from its definition to just before the end of the current
 
 An identifier declared with an inner scope can shadow an identifier declared with a broader scope, making the latter temporarily inaccessible. For example, in the following program the second declaration shadows the first declaration of i:
 
-```C++
+```cpp
 // scope.cpp
 
 #include <iostream>
@@ -422,7 +422,7 @@ A function's signature identifies an overloaded function uniquely. Its signature
 - the parameter types (ignoring const qualifiers or address of operators as described in references below)
 - the order of the parameter types
 
-```C++
+```cpp
  type identifier ( type identifier [, ... , type identifier] )
 ```
 
@@ -434,7 +434,7 @@ C++ compilers preserve identifier uniqueness by renaming each overloaded functio
 
 Consider the following example of an overloaded function. To display data on the standard output device, we can define a display() function with different meanings:
 
-```C++
+```cpp
 // Overloaded Functions
 // overload.cpp
 #include <iostream>
@@ -485,7 +485,7 @@ A programming language may require a function declaration before any function ca
 
 For example, the following program will generate a compiler error (note that the absence of any printf declaration):
 
-```C++
+```cpp
 int main() {
     printf("Hello C++\n");
 }
@@ -493,7 +493,7 @@ int main() {
 
 To meet type safety requirements, we include the prototype:
 
-```C++
+```cpp
  #include <cstdio> // the prototype is in this header file
  using namespace std;
 
@@ -508,7 +508,7 @@ We may include default values for some or all of a function's parameters in the 
 
 Declarations with default parameter values take the following form:
 
-```C++
+```cpp
  type identifier(type[, ...], type = value);
 ```
 
@@ -520,7 +520,7 @@ Specifying default values for function parameters reduces the need for multiple 
 
 For example,
 
-```C++
+```cpp
 // Default Parameter Values
 // default.cpp
 
@@ -557,7 +557,7 @@ A reference is an alias for a variable or object. Object-oriented languages rely
 
 The declaration of a function parameter that is received as a reference to the corresponding argument in the function call takes the form
 
-```C++
+```cpp
  type identifier(type& identifier, ... )
 ```
 
@@ -569,7 +569,7 @@ Consider a function that swaps the values stored in two different memory locatio
 
 #### Swapping values by address
 
-```c++
+```cpp
 // Swapping values by address
 // swap1.cpp
 
@@ -607,7 +607,7 @@ void swap ( char *a, char *b ) {
 
 ### Swapping values by reference
 
-```C++
+```cpp
 // Swapping values by reference
 // swap2.cpp
 
@@ -657,7 +657,7 @@ In preparation for a detailed study of polymorphic objects later in this course,
 
 **Example:**
 
-```C++
+```cpp
  // Array of Pointers
  // array_pointers.cpp
 
@@ -694,7 +694,7 @@ In preparation for a detailed study of polymorphic objects later in this course,
 
 **Output**
 
-```C++
+```cpp
  1234
  67.8
  john

@@ -136,7 +136,7 @@ A namespace is a scope for the entities that it encloses. Scoping rules avoid id
 
 We define a namespace as follows:
 
-```C++
+```cpp
  namespace identifier {
 
  }
@@ -146,7 +146,7 @@ The identifier after the `namespace ` keyword is the name of the scope. The pair
 
 For example, to define x in two separate `namespaces` (english and french), we write
 
-```C++
+```cpp
 namespace english {
 
      int x = 2;
@@ -166,7 +166,7 @@ To access a variable defined within a namespace, we precede its identifier with 
 
 For example, to increment the `x` in namespace `english` and to decrement the `x` in namespace `french`, we write:
 
-```C++
+```cpp
      english::x++;
      french::x--;
 ```
@@ -177,13 +177,13 @@ Namespaces hide their entities. To expose an identifier to the current namespace
 
 For example, to expose one of the `x`'s to the current namespace, we write:
 
-```C++
+```cpp
     using french::x;
 ```
 
 After which, we can simply write:
 
-```C++
+```cpp
     x++; // increments french::x but not english::x
 ```
 
@@ -191,13 +191,13 @@ To expose all of a namespace's identifiers, we insert the `using` directive into
 
 For example, to expose all of the identifiers within namespace `english`, we write:
 
-```C++
+```cpp
     using namespace english;
 ```
 
 Afterwards, we can write:
 
-```C++
+```cpp
      x++; // increments english::x but not french::x
 ```
 
@@ -247,7 +247,7 @@ The two functions - main() and printf() - specify activities. These identifiers 
 
 The procedural C++ source code for displaying the phrase is
 
-```C++
+```cpp
  // A Language for Complex Applications
  // welcome.cpp
  //
@@ -270,7 +270,7 @@ The file extension for any C++ source code is .cpp. `<cstdio>` is the C++ versio
 
 The directive
 
-```c++
+```cpp
 using namespace std;
 ```
 
@@ -280,7 +280,7 @@ exposes all of the identifiers declared within the std namespace to the global n
 
 The object-oriented C++ source code for displaying our welcome phrase is
 
-```C++
+```cpp
  // A Language for Complex Applications
  // welcome.cpp
  //
@@ -303,7 +303,7 @@ The object-oriented syntax consists of:
 
 1. The directive
 
-   ```C++
+   ```cpp
    #include <iostream>
    ```
 
@@ -311,7 +311,7 @@ The object-oriented syntax consists of:
 
 2. The object
 
-   ```c++
+   ```cpp
     cout
    ```
 
@@ -319,7 +319,7 @@ The object-oriented syntax consists of:
 
 3. The operator
 
-```C++
+```cpp
  <<
 ```
 
@@ -327,7 +327,7 @@ inserts whatever is on its right side into whatever is on its left side.
 
 4. The manipulator
 
-```C++
+```cpp
  endl
 ```
 
@@ -336,7 +336,7 @@ Note the absence of a formatting string. The cout object handles the output form
 
 That is, the complete statement
 
-```C++
+```cpp
  cout << "Welcome to Object-Oriented" << endl;
 ```
 
@@ -346,7 +346,7 @@ inserts into the standard output stream the string `"Welcome to Object-Oriented"
 
 The following object-oriented program accepts an integer value from standard input and displays that value on standard output:
 
-```C++
+```cpp
  // Input Output Objects
  // inputOutput.cpp
  //
@@ -380,7 +380,7 @@ The object-oriented input statement includes:
 
 - The object
 
-```c++
+```cpp
  cin
 ```
 
@@ -388,7 +388,7 @@ represents the standard input device.
 
 The extraction operator
 
-```c++
+```cpp
  >>
 ```
 
@@ -397,7 +397,7 @@ Note the absence of a formatting string. The `cin` object handles the input form
 
 That is, the complete statement
 
-```C++
+```cpp
  cin >> i;
 ```
 

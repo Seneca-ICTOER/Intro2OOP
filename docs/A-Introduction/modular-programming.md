@@ -83,7 +83,7 @@ The related functions are global functions
 
 The header file for our **Transaction** module defines our Transaction type and declares the prototypes for our two functions:
 
-```C++
+```cpp
 // Modular Example
 // Transaction.h
 
@@ -103,7 +103,7 @@ Note the UML naming convention and the extension on the name of the header file.
 
 The implementation file for our **Transaction** module defines our two functions. This file includes the system header file for access to the **cout** and **cin** objects and the header file for access to the **Transaction** type.
 
-```C++
+```cpp
 // Modular Example
 // Transaction.cpp
 
@@ -143,7 +143,7 @@ The main module defines a **Transaction** object and accepts input and displays 
 
 The header file for our **Main** module **#defines** the number of transactions:
 
-```C++
+```cpp
 // Modular Example
 // main.h
 
@@ -154,7 +154,7 @@ The header file for our **Main** module **#defines** the number of transactions:
 
 The implementation file for our **Main** module defines the **main()** function. We **#include** the header file to provide the definition of the Transaction type:
 
-```C++
+```cpp
 // Modular Example
 // main.cpp
 
@@ -256,7 +256,7 @@ We use unit tests to examine the **work units** in an application and rerun the 
 
 Consider a **Calculator** module that raises an integer to the power of an integer exponent and determines the integer exponent to which an integer base has been raised to obtain a given result. The header file for the **Calculator** module includes the prototypes for these two work units:
 
-```C++
+```cpp
 // Calculator.h
 // ...
 int power(int, int);
@@ -265,7 +265,7 @@ int exponent(int, int);
 
 The suite of unit tests for this module checks if the implementations return the expected results. The header file for the **Tester** module contains:
 
-```C++
+```cpp
 // Tester.h
 
 int testSuite(int BASE, int EXPONENT, int RESULT);
@@ -273,7 +273,7 @@ int testSuite(int BASE, int EXPONENT, int RESULT);
 
 The implementation file for the **Tester** module contains:
 
-```C++
+```cpp
 // Tester.cpp
 
 #include<iostream>
@@ -305,7 +305,7 @@ int testSuite(int BASE, int EXPONENT, int RESULT) {
 
 A first attempt at implementing the **Calculator** module might look like:
 
-```C++
+```cpp
 // Calculator.cpp
 
 #include "Calculator.h"
@@ -330,7 +330,7 @@ int exponent(int result, int base) {
 
 The following is the test main.
 
-```C++
+```cpp
 
 // Test Main
 // testmain.cpp

@@ -83,7 +83,7 @@ A class definition declares the variables and the function prototypes. The varia
 
 Encapsulation shields the complex details of a class' implementation from its interface; that is, its crisp external representation. Consider the following statement from the preceding chapter:
 
-```C++
+```cpp
 cout << "Welcome to Object-Oriented";
 ```
 
