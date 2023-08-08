@@ -14,6 +14,12 @@ module.exports = {
   organizationName: 'Seneca-ICTOER',
   projectName: 'Intro2OOP',
   themeConfig: {
+    docs: {
+      sidebar: {
+        autoCollapseCategories: false,
+        hideable: true,
+      },
+    },
     navbar: {
       title: 'Introduction to Object Oriented Programming (C++)',
       logo: {
@@ -41,7 +47,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Chris Szalwinski and Seneca College.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Seneca College.`,
     },
     prism: {
       theme: lightCodeTheme,
