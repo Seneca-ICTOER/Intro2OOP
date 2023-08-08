@@ -12,7 +12,7 @@ The precedence order of the operators covered in these notes is important in the
 To ensure unique evaluation of all compound expressions, C++ defines rules of precedence on the operators in a compound expression. This order is from top to bottom in the table shown below. The operators associate operands in each sub-expression as noted in the right column, mostly from left to right.
 
 |                                                   Operator                                                   | Associate From |
-| :----------------------------------------------------------------------------------------------------------: | :------------: | --- | ------------- |
+| :----------------------------------------------------------------------------------------------------------: | :------------: |
 |                                                     `::`                                                     | Left to right  |
 |                                 `[ ]` `.` `->` `++` (postfix) `--` (postfix)                                 | Left to right  |
 | `++` (prefix) `--` (prefix) `+` `-` `&` `!` (all unary) `new` `new[]` `delete` `delete[]` `(type)`, `type()` | Right to left  |
@@ -23,7 +23,7 @@ To ensure unique evaluation of all compound expressions, C++ defines rules of pr
 |                                              `<` `<=` `>` `>=`                                               | Left to right  |
 |                                                  `==` `!=`                                                   | Left to right  |
 |                                                     `&&`                                                     | Left to right  |
-|                                                      `                                                       |                | `   | Left to right |
+|                                                 &#124;&#124;                                                 | Left to right  |
 |                                         `=` `+=` `-=` `*=` `/=` `%=`                                         | Right to left  |
 |                                                     `?:`                                                     | Left to right  |
 |                                                     `,`                                                      | Left to right  |
