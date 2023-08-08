@@ -98,7 +98,7 @@ public:
 };
 ```
 
-The implementation file is also the same as in the chapter entitled [Functions in a Hierarchy](/Inheritance/functions-in-a-hierarchy):
+The implementation file is also the same as in the chapter entitled [Functions in a Hierarchy](/D-Inheritance/functions-in-a-hierarchy):
 
 ```cpp
 // Student.cpp

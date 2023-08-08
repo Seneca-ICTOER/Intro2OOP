@@ -860,7 +860,7 @@ The standard library overloads the extraction and insertion operators for the fu
 
 #### Fundamental Types
 
-For fundamental types see the chapter entitled [Input and Output Operators](/Encapsulation/input-and-output-operators).
+For fundamental types see the chapter entitled [Input and Output Operators](/C-Encapsulation/input-and-output-operators).
 
 #### Custom Types
 

@@ -62,7 +62,7 @@ We overload operators in either of two ways, as:
 - **Member Operators:** Part of the class definition with direct access to the class representation
 - **Helper Operators:** Supporting the class, without direct access to its representation
 
-We prefer to declare operators that change the state of their left operand as member operators. Helper operators are described separately in the chapter entitled [Helper Functions](/Encapsulation/helper-functions).
+We prefer to declare operators that change the state of their left operand as member operators. Helper operators are described separately in the chapter entitled [Helper Functions](/C-Encapsulation/helper-functions).
 
 ### Overloading a Member Operator
 
@@ -197,7 +197,7 @@ int main () {
 
 ## Unary Operators
 
-A unary operation consists of one operator and one operand. The left operand of a unary member operator is the current object. The operator does not take any explicit parameters (with one exception - see [post-fix operators](/Encapsulation/member-operators#post-fix-operators) below).
+A unary operation consists of one operator and one operand. The left operand of a unary member operator is the current object. The operator does not take any explicit parameters (with one exception - see [post-fix operators](/C-Encapsulation/member-operators#post-fix-operators) below).
 
 The header for a unary member operator takes the form
 
