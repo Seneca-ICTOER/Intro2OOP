@@ -387,8 +387,8 @@ Harry 1234:
 In the `main()` function:
 
 - `p` initially points to nothing (holds the null address). The object's dynamic type is undefined.
-- After the first allocation, `p` points to a `Student` type (dynamic type).
-- After the second allocation, `p` points to a `Person` type (the new dynamic type).
+- After the first allocation, `p` points to a `Person` type (dynamic type).
+- After the second allocation, `p` points to a `Student` type (the new dynamic type).
 - The static and dynamic types are related to one another through the hierarchy.
 
 Note that we only need one `show()` function to display both dynamic types.
