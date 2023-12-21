@@ -458,7 +458,7 @@ For example,
 
 int main() {
     std::ofstream fout;      // create a file object named fout
-    std::ofstream fout("output.txt"); // connects fout to output.txt for writing
+    std::ofstream fout.open("output.txt"); // connects fout to output.txt for writing
     // ...
 }
 ```
