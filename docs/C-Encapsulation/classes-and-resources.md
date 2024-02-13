@@ -26,8 +26,8 @@ A C++ object refers to a resource through a resource instance pointer. This poin
 
 Let us upgrade our `Student` class to accommodate a variable number of grades. The client code specifies the number at run-time. The array of grades is now a dynamically allocated resource. We allocate:
 
-- Static memory for the resource instance variable (grade)
-- Dynamic memory for the grade array itself
+- static memory for the resource instance variable (grade)
+- dynamic memory for the grade array itself
 
 In this section, we focus on the constructors and the destructor for our `Student` class. Let us assume that the client does not copy or assign objects of this class. We shall cover the copying and assignment logic in subsequent sections:
 
@@ -134,8 +134,8 @@ In each deep copy, we allocate memory for the underlying resource and copy the c
 
 Two special member functions manage allocations and deallocations associated with deep copying and deep copy assigning:
 
-- The copy constructor
-- The copy assignment operator
+- the copy constructor
+- the copy assignment operator
 
 If we do not declare a copy constructor, the compiler inserts code that implements a shallow copy. If we do not declare a copy assignment operator, the compiler inserts code that implements a shallow assignment.
 
@@ -145,7 +145,7 @@ The copy constructor contains the logic for copying from a source object to a ne
 
 1. Creates an object by initializing it to an existing object
 2. Copies an object by value in a function call
-3. Ceturns an object by value from a function
+3. Returns an object by value from a function
 
 ### Declaration
 
@@ -159,20 +159,20 @@ where `Type` is the name of the class.
 
 To define a copy constructor, we insert its declaration into the class. For example, we insert the following into the definition of our `Student` class:
 
-```cpp
- // Student.h
+```cpp {10} showLineNumbers
+// Student.h
 
- class Student {
-     int no;
-     float* grade;
-     int ng;
- public:
-     Student();
-     Student(int, const char*);
-     Student(const Student&);
-     ~Student();
-     void display() const;
- };
+class Student {
+    int no;
+    float* grade;
+    int ng;
+public:
+    Student();
+    Student(int, const char*);
+    Student(const Student&);
+    ~Student();
+    void display() const;
+};
 ```
 
 ### Definition
