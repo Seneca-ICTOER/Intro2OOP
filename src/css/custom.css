@@ -22,6 +22,13 @@
   --ifm-code-font-size: 95%;
 }
 
+
+:root {
+  /* Somebody changed this to a bad value -- don't know who or where.*/
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+
 html[data-theme='dark'] {
   --ifm-color-primary: #f69993;
   --ifm-color-primary-dark: #f3776f;

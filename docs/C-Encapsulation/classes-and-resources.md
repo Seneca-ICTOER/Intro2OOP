@@ -159,7 +159,7 @@ where `Type` is the name of the class.
 
 To define a copy constructor, we insert its declaration into the class. For example, we insert the following into the definition of our `Student` class:
 
-```cpp {10} showLineNumbers
+```cpp {10} showLineNumbers title="Student.h"
 // Student.h
 
 class Student {
@@ -195,8 +195,7 @@ using namespace std;
 // ...
 
 Student::Student(const Student& src) {
-
-    // shallow copies
+    // shallow copy
     no = src.no;
     ng = src.ng;
 
@@ -260,29 +259,35 @@ public:
 The definition of the copy assignment operator contains logic to:
 
 1. Check for self-assignment
-2. Shallow copy the non-resource instance variables to destination variables
-3. Deallocate any previously allocated memory for the resource associated with the current object
+2. Deallocate any previously allocated memory for the resource associated with the current object
+3. Shallow copy the non-resource instance variables to destination variables
 4. Allocate a new memory for the resource associated with the current object
 5. Copy resource data from the source object to the newly allocated memory of the current object
-6. For example, the following code performs a deep copy assignment on objects of our Student class:
+
+For example, the following code performs a deep copy assignment on objects of our Student class:
 
 ```cpp
 // Student.cpp
 
 // ...
 
-Student& Student::operator=(const Student& source) {
-    // check for self-assignment
-    if (this != &source) {
-        // shallow copy non-resource variables
+Student& Student::operator=(const Student& source)
+{
+    // 1. check for self-assignment (and NOTHING else)
+    if (this != &source)
+    {
+        // 2. clean up (deallocate previously allocated dynamic memory)
+        delete[] grade;
+
+        // 3. shallow copy (copy non-resource variables)
         no = source.no;
         ng = source.ng;
-        // deallocate previously allocated dynamic memory
-        delete [] grade;
-        // allocate new dynamic memory, if needed
+
+        // 4. deep copy (copy the resource)
         if (source.grade != nullptr) {
+            // 4.1 allocate new dynamic memory, if needed
             grade = new float[ng];
-            // copy the resource data
+            // 4.2 copy the resource data
             for (int i = 0; i < ng; i++)
                 grade[i] = source.grade[i];
         }
@@ -340,22 +345,32 @@ Student& Student::operator=(const Student& source) {
 The following solution initializes the resource instance variable in the copy constructor to `nullptr` and calls the copy assignment operator directly:
 
 ```cpp
-Student::Student(const Student& source) {
+Student::Student(const Student& source)
+{
+    // copy-assignment operator will deallocate `grade`
+    //   We must ensure that the `grade` doesn't contain some random value.
     grade = nullptr;
-    *this = source; // calls assignment operator
+    *this = source; // calls copy-assignment operator
 }
 
-Student& Student::operator=(const Student& source) {
-    if (this != &source) {  // check for self-assignment
+Student& Student::operator=(const Student& source)
+{
+    // 1. check for self-assignment (and NOTHING else)
+    if (this != &source)
+    {
+        // 2. clean up (deallocate previously allocated dynamic memory)
+        delete[] grade;
+
+        // 3. shallow copy (copy non-resource variables)
         no = source.no;
         ng = source.ng;
-        // deallocate previously allocated dynamic memory
-        delete [] grade;
-        // allocate new dynamic memory
+
+        // 4. deep copy (copy the resource)
         if (source.grade != nullptr) {
+            // 4.1 allocate new dynamic memory, if needed
             grade = new float[ng];
-            // copy resource data
-            for (int = 0; i < ng; i++)
+            // 4.2 copy the resource data
+            for (int i = 0; i < ng; i++)
                 grade[i] = source.grade[i];
         }
         else {
@@ -383,19 +398,22 @@ public:
     // ...
 };
 
-Student::Student() {
-no = 0;
-ng = 0;
-grade = nullptr;
+Student::Student()
+{
+    no = 0;
+    ng = 0;
+    grade = nullptr;
 }
 
-Student::Student(int n) {
-float g[] = {0.0f};
-grade = nullptr;
-*this = Student(n, g, 0);
+Student::Student(int n)
+{
+    float g[] = {0.0f};
+    grade = nullptr;
+    *this = Student(n, g, 0);
 }
 
-Student::Student(int sn, const float* g, int ng_) {
+Student::Student(int sn, const float* g, int ng_)
+{
     bool valid = sn > 0 && g != nullptr && ng_ >= 0;
     if (valid)
         for (int i = 0; i < ng_ && valid; i++)
@@ -424,8 +442,9 @@ Student::Student(int sn, const float* g, int ng_) {
 
 Certain class designs require prohibiting client code from copying or copy assigning any instance of a class. To prohibit copying and/or copy assigning, we declare the copy constructor and/or the copy assignment operator as deleted members of our class:
 
-```cpp
-class Student {
+```cpp {9-10}
+class Student
+{
     int no;
     float* grade;
     int ng;
@@ -439,7 +458,7 @@ public:
 };
 ```
 
-The keyword `delete` used in this context has no relation to deallocating dynamic memory.
+The keyword `delete` used in this context has no relation to deallocating dynamic memory; it instructs the compiler to not insert the copy operations.
 
 ## Summary
 
