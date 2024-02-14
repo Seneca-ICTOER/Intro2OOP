@@ -1,7 +1,7 @@
 ---
 id: member-operators
 title: Member Operators
-sidebar_position: 3
+sidebar_position: 4
 description: TBD
 ---
 

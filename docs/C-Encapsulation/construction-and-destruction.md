@@ -1,7 +1,7 @@
 ---
 id: construction-and-destruction
 title: Construction and Destruction
-sidebar_position: 1
+sidebar_position: 2
 description: TBD
 ---
 

@@ -1,7 +1,7 @@
 ---
 id: member-functions-and-privacy
 title: Member Functions and Privacy
-sidebar_position: 3
+sidebar_position: 1
 description: TBD
 ---
 

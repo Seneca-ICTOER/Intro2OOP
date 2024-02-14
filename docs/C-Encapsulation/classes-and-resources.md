@@ -1,7 +1,7 @@
 ---
 id: classes-and-resources
 title: Classes and Resources
-sidebar_position: 4
+sidebar_position: 5
 description: TBD
 ---
 

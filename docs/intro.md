@@ -18,10 +18,10 @@ description: Contents of Introduction to Object Oriented Programming (C++)
 
 - [Types, Overloading and References](B-Foundations/types-overloading-and-references.md)
 - [Dynamic Memory](B-Foundations/dynamic-memory.md)
-- [Member Functions and Privacy](B-Foundations/member-functions-and-privacy.md)
 
 ## Encapsulation
 
+- [Member Functions and Privacy](C-Encapsulation/member-functions-and-privacy.md)
 - [Construction and Destruction](C-Encapsulation/construction-and-destruction.md)
 - [The Current Object](C-Encapsulation/the-current-object.md)
 - [Member Operators](C-Encapsulation/member-operators.md)
