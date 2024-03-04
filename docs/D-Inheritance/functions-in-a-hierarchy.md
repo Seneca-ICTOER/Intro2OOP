@@ -301,16 +301,22 @@ Jane Doe
 
 A derived class does not inherit a base class constructor by default. That is, if we do not declare a constructor in our definition of the derived class, the compiler inserts an empty no-argument constructor by default.
 
-The compiler constructs an instance of the derived class in four steps in two distinct stages:
+The compiler constructs an instance of the derived class in three steps:
 
-1. Construct the base class portion of the complete object
-   1. Allocate memory for the instance variables in the order of their declaration
-   2. Execute the base class constructor
-2. Construct the derived class portion of the object
-   1. Allocate memory for the instance variables in the order of their declaration
-   2. Execute the derived class constructor
+1. Memory Allocation:
+   - The memory for the entire object (both base and derived parts) is allocated as a single contiguous block. This means that the memory for the base class and any additional members introduced by the derived class are allocated together. The size of the allocated memory depends on the combined size of the base class and the derived class.
+2. Base Class Initialization:
+   - The base class constructor initializes the base class members.
+3. Derived Class Initialization:
+   - After the base class is initialized, the derived class constructor is invoked.
+   - The derived class constructor initializes the derived class members.
 
 ![Inheritance Constructors](../../static/img/inherit_ctor.png)
+
+- Initialization Order:
+  - The base class constructor is called first to initialize the base class part of the object.
+  - Then, the derived class constructor is called to initialize the derived class part.
+  - The order of constructor calls is always from base to derived.
 
 In our example, let us define a no-argument constructor for the base class. The header file declares the no-argument constructor:
 
