@@ -204,7 +204,7 @@ g++ main.cpp Transaction.cpp -o accounting -Wall -std=c++11
 To compile our application at the command-line on a Windows platform using the Visual Studio compiler, we enter the command (To open the Visual Studio command prompt window, we press Start > All Programs and search for the prompt in the Visual Studio Tools sub-directory. )
 
 ```shell
-cl /Fe accounting main.cpp Transaction.cpp
+cl /Feaccounting main.cpp Transaction.cpp
 ```
 
 The `/Fe` option identifies the name of the executable. The names of the two implementation files follow this option.
