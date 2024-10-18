@@ -4,7 +4,7 @@
 
 # LICENSE
 
-NOTE: this repository is a derivative work based on https://ict.senecacollege.ca/~oop345 which was designed by Chris Szalwinski, Professor, Seneca College, Toronto, Canada.
+NOTE: this repository is a derivative work based on https://ict.senecacollege.ca/~oop244 which was designed by Chris Szalwinski, Professor, Seneca College, Toronto, Canada.
 
 ## Documentation
 
